@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dawii Pharmacy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width intial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index-style.css">
+	<style type="text/css">
+		.bold{
+			font-weight: bold;
+		}
+		.tablet-img > img{
+			height: 150px;
+
+		}
+		.tablet-img{
+			border-bottom: 2px solid #cce;
+			 margin-bottom: 7px;
+		}
+        .tablet-name{
+            color: black;
+        }
+		.tablet-price{
+			color: black;
+			opacity: 0.7;
+		}
+		.tablet-description{
+			padding-left: 7%;
+		}
+		.tablet-description > span{
+			display: block;
+		}
+		.tablet-price{
+			font-size: 17px;
+		}
+		.full-tablet-division{
+			/*margin-bottom: 10px;*/
+
+            
+			/*display: inline-block;
+			vertical-align: middle;
+			-webkit-transform: perspective(1px) translateZ(0);
+			transform: perspective(1px) translateZ(0);
+			box-shadow: 0 0 1px transparent;
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-property: transform;
+			transition-property: transform;*/
+		}
+		.full-tablet-division:hover, .full-tablet-division:focus, .full-tablet-division:active {
+  			/*overflow: hidden;
+  			-webkit-transform: scale(1.05);
+  			transform: scale(1.05);*/
+		}
+        .sort-by{
+        	margin-top: 30px; 
+        	margin-bottom: 30px;
+        }
+        .pharmacy-list{
+        	margin-top: 70px;
+        }
+        .pharmacy-heading > h3{
+        	padding-bottom: 18px;
+        	border-bottom: 2px solid #ddd;
+        }
+        .pharmacy-heading > h3 > span{
+        	border-bottom: 6px solid #337ab7;
+        	padding-bottom: 12px; 
+        	color: #023d53;
+        }
+        .sort-by > select {
+        	padding-right: 20px;
+        }
+        .pd-top{
+            margin-bottom: 14px;
+        }
+        .btn-cart{
+            transform: translate(60px, -60px);
+            /*transform: translateY(-60px);*/
+            /*transform: translateX(10px);*/
+        }
+        @media screen and (max-width: 768px) and (min-width: 500px) 
+        {
+           .tablet-description{
+           	    padding-left: 38%;
+        	}
+        	.tablet-description > .text-muted{
+        		font-size: 16px;
+        		
+        	}
+        	.tablet-img{
+        		text-align: center;
+        		padding-left: 36%;
+        	}
+        	.tablet-img{
+			   border-bottom: 0px solid #cce;
+		    }
+		    .full-tablet-division{
+		    	border-bottom: 2px solid #cce;
+		    	padding-bottom: 10px;
+		     }	
+        }
+
+        @media screen and (max-width: 500px)
+        {
+        	.tablet-description{
+        		text-align: center;
+        	}
+        	.tablet-description > .text-muted{
+        		font-size: 16px;
+        		
+        	}
+        	.tablet-img{
+        		text-align: center;
+        		padding-left: 30%;
+        	}
+        	.tablet-img{
+			   border-bottom: 0px solid #cce;
+		    }
+		    .full-tablet-division{
+		    	border-bottom: 2px solid #cce;
+		    	padding-bottom: 10px;
+		     }
+        }
+        @media screen and (max-width: 300px)
+        {
+        	.tablet-img{
+        		padding-left: 24% !important;
+        	}
+        }
+	</style>
+</head>
+<body>
+    <div class="pd-top">
+         <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+           <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                        
+             </button>
+             <a class="navbar-brand" href="#">Healers</a>
+           </div>
+           <div class="collapse navbar-collapse" id="myNavbar">
+             <ul class="nav navbar-nav">
+               <li class="active"><a href="#">Home</a></li>
+               <li class="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pharmacy Products<span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                   <li><a href="#" class="white">Page 1-1</a></li>
+                   <li><a href="#" class="white">Page 1-2</a></li>
+                   <li><a href="#" class="white">Page 1-3</a></li>
+                 </ul>
+               </li>
+              <li class="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Find Doctor <span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                   <li><a href="#">Find Physician</a></li>
+                   <li><a href="#">Find Surgeon</a></li>
+                   <li><a href="#">Find Dentist</a></li>
+                 </ul>
+               </li>
+               <li><a href="#">Page 3</a></li>
+             </ul>
+             <ul class="nav navbar-nav navbar-right">
+               <li><a href="#" data-target="#signUpModal" data-toggle="modal"><span class="fa fa-user"></span> Sign Up</a></li>
+               <li><a href="#" data-target="#loginModal" data-toggle="modal"><span class="fa fa-sign-in"></span> Login</a></li>
+             </ul>
+           </div>
+         </div>
+         <div class="container">
+         <div class="row">
+           <div class="col-md-offset-3 col-md-9">
+             <form>
+                <div class="row input-product">
+                   <input type="text" name="" placeholder="Search For Products" class="col-md-5 col-xs-6 input-product-search" />
+                   
+
+                   <div class="col-md-2 col-xs-2">
+                     <button class="btn  btn-search btn-lg"><i class="fa fa-search"></i></button>
+                   </div><!-- div.col-md-2 -->
+                   
+                   <div class="col-md-offset-3 col-md-2">
+                     <a href="#"> <span class="badge cart-counter">5</span></a><br>
+                     <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="price">Rs. 175.00</span>
+                   </div><!-- div.col-md-2 -->
+
+                </div><!-- div.row div.input-product -->
+             </form><!--  form -->
+              
+           </div>
+           
+         </div><!-- div.col-md-6 -->
+         
+       </div><!-- div.container -->
+       </nav>
+       
+    </div><!-- div.pd-top -->
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				
+			</div>
+			<div class="col-md-10">
+				<img src="img/pharmacy1.jpg"  class="img img-responsive" />
+				
+				<div class="sort-by pull-right">
+					Sort By  
+					<select>
+						<option>Default Order</option>
+						<option>Sort By Date</option>
+						<option>Sort By Latest</option>
+						<option>Sort By Newest</option>
+						<option>Sort By Default</option>
+					</select>
+				</div><!--  /div.sort-by -->
+
+                <div class="pharmacy-list">
+                	<div class="pharmacy-heading">
+                		<h3 class="bold"><span>PHARMACY</span></h3>
+                	</div>
+
+                    
+                	<div class="row">
+
+
+                		<a href="#">
+                		<div class="col-md-3 col-xs-12 col-sm-offset-0 col-sm-4 full-tablet-division">
+                			<div class="tablet-img">
+                				<img src="img/tablet1.jpg" class="img img-responsive" />
+                			</div>
+                			<div class="tablet-description">
+                			    <span class="tablet-name">Gulcophage 250mg</span>
+                                <span class="tablet-price">Rs 46 <button class="btn btn-xs btn-danger btn-cart">Add to Cart</button></span>
+                			</div>
+                		</div> <!-- /div.col-md-3 -->
+                		</a>
+
+
+                        <a href="#">
+                		<div class="col-md-3  col-sm-offset-0 col-sm-4 col-xs-12 full-tablet-division">
+                			<div class="tablet-img">
+                				<img src="img/tablet2.jpg" class="img img-responsive" />
+                			</div>
+                			<div class="tablet-description">
+                			    <span class="tablet-name">Gulcophage 250mg</span>
+                                <span class="tablet-price">Rs 15</span>	
+                			</div>
+                		</div> <!-- /div.col-md-3 -->
+                	    </a>
+
+
+                        <a href="">
+                		<div class="col-md-3 col-xs-12 col-sm-offset-0 col-sm-4 full-tablet-division">
+                			<div class="tablet-img">
+                				<img src="img/tablet3.jpg" class="img img-responsive" />
+                			</div>
+                			<div class="tablet-description">
+                			    <span class="tablet-name">Gulcophage 250mg</span>
+                                <span class="tablet-price">Rs 24</span>	
+                			</div>
+                		</div> <!-- /div.col-md-3 -->
+                        </a>
+
+                        <a href="#">
+                		<div class="col-md-3 col-xs-12 col-sm-offset-0 col-sm-4 full-tablet-division">
+                			<div class="tablet-img">
+                				<img src="img/tablet4.jpg" class="img img-responsive" />
+                			</div>
+                			<div class="tablet-description">
+                			    <span class="tablet-name">Gulcophage 250mg</span>
+                                <span class="tablet-price">Rs 60</span>	
+                			</div>
+                		</div> <!-- /div.col-md-3 -->
+                        </a>
+
+                        <a href="#">
+                        <div class="col-md-3  col-xs-12 col-sm-offset-0 col-sm-4 full-tablet-division">
+                			<div class="tablet-img">
+                				<img src="img/tablet3.jpg" class="img img-responsive" />
+                			</div>
+                			<div class="tablet-description">
+                			    <span class="tablet-name">Gulcophage 250mg</span>
+                                <span class="tablet-price">Rs 60</span>	
+                			</div>
+                		</div> <!-- /div.col-md-3 -->
+                        </a>
+
+                        <a href="#">
+                        <div class="col-md-3 col-xs-12 col-sm-offset-0 col-sm-4 full-tablet-division">
+                			<div class="tablet-img">
+                				<img src="img/tablet3.jpg" class="img img-responsive" />
+                			</div>
+                			<div class="tablet-description">
+                			    <span class="tablet-name">Gulcophage 250mg</span>
+                                <span class="tablet-price">Rs 60</span>	
+                			</div>
+                		</div> <!-- /div.col-md-3 -->
+                        </a>
+
+
+                        <a href="#">
+                		<div class="col-md-3 col-xs-12 col-sm-offset-0 col-sm-4 full-tablet-division">
+                			<div class="tablet-img">
+                				<img src="img/tablet3.jpg" class="img img-responsive" />
+                			</div>
+                			<div class="tablet-description">
+                			    <span class="tablet-name">Gulcophage 250mg</span>
+                                <span class="tablet-price">Rs 60</span>	
+                			</div>
+                		</div> <!-- /div.col-md-3 -->
+                        </a>
+
+
+                        <a href="#">
+                		<div class="col-md-3 col-xs-12 col-sm-offset-0 col-sm-4 full-tablet-division">
+                			<div class="tablet-img">
+                				<img src="img/tablet3.jpg" class="img img-responsive" />
+                			</div>
+                			<div class="tablet-description">
+                			    <span class="tablet-name">Gulcophage 250mg</span>
+                                <span class="tablet-price">Rs 60</span>	
+                			</div>
+                		</div> <!-- /div.col-md-3 -->
+                        </a>
+
+
+                	</div>
+                </div>
+
+			</div>
+		</div>
+	</div>
+
+     <!--footer-->
+   <footer id="footer">
+     
+     <div class="footer-line">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-offset-1 col-md-3  col-xs-6">
+             <h4 style="color: white">Product Categories</h4><br>
+             <ul class="list-unstyled footer-list">
+               <li><a href="#">Health &amp; Fitness</a></li>
+               <li><a href="#">Perfume, Beauty &amp; Hair Care</a></li>
+               <li><a href="#">Baby Care</a></li>
+               <li><a href="#">Medicines &amp; Medical Equipment</a></li>
+               <li><a href="#">Pharmacy</a></li>
+               <li><a href="#">Brands</a></li>
+             </ul>
+           </div>
+
+
+
+           <div class="col-md-offset-1 col-md-3  col-xs-6">
+             <h4 style="color: white">Specialists</h4><br>
+             <ul class="list-unstyled footer-list">
+               <li><a href="#">General Physician</a></li>
+               <li><a href="#">Dentistry</a></li>
+               <li><a href="#">Dermatolgy</a></li>
+               <li><a href="#">Cardiologist</a></li>
+               <li><a href="#">Gynecology</a></li>
+               <li><a href="#">Orthopedic</a></li>
+             </ul>
+           </div>
+
+
+
+           <div class="col-md-offset-1 col-md-3 col-xs-offset-4 col-xs-6">
+              <h4 style="color: white">Contact Us</h4><br>
+              <ul class="list-unstyled footer-list">
+                 <li>Healers.com.pk</li>
+                 <li><i class="fa fa-phone"></i> 0333-1234567</li>
+                 <li><i class="fa fa-envelope"></i> order@healers.com.pk</li>
+                 <li ><button class="btn btn-sm btn-primary btn-facebook"><a href=""><i class="fa fa-facebook"></i></a></button>
+                 <button class="btn btn-sm btn-primary btn-twitter"><a href=""><i class="fa fa-twitter"></i></a></button>
+                 <button class="btn btn-sm btn-primary btn-instagram"><a href=""><i class="fa fa-instagram"></i></a></button></li>
+                
+              </ul>
+           </div><!-- div.col-md-3 -->
+         </div><!-- div.row -->
+       </div><!-- div.container -->
+     </div>
+   </footer>
+   <div class="container-fluid copyright">
+      <p class="text-center">Copyright &copy; all rights reserved 2017</p>
+   </div>
+   <!--/ footer-->
+
+</body>
+</html>

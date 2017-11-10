@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tabs</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+		.tab-details > li{
+            padding: 20px 2%;
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0.8;
+            border: 1px solid #ddd;
+		}
+		.nav-tabs{
+			border: none;
+		}
+		.tab-details > li > i{
+			padding-right: 15px;
+			font-size: 20px;
+		}
+		.tab-details > li:hover{
+			background-color: green;
+            color: white;
+		}
+		.tab-details > li:hover >  i{
+           color: yellow;
+           transition: 1s;
+		}
+		.individual-detail{
+			padding: 20px 0%;
+			border: 1px solid #ddd;
+		}
+		.individual-detail > p{
+			padding-left: 3%;
+			font-size: 16px;
+			opacity: 0.8;
+		}
+		.active-tab{
+			background-color: green;
+            color: white;
+		}
+		.active-tab > i{
+			color: yellow;
+		}
+		@media screen  and (max-width: 500px)
+		{
+		  .tab-details > li{
+		  	font-size: 11px;
+		  }
+          .tab-details > li > i{
+			padding-right: 5px;
+			font-size: 15px;
+		   }
+
+		}
+	</style>
+</head>
+<body style="padding-top: 200px">
+   <div class="container">
+   	  <ul class="nav nav-tabs tab-details">
+   	  	<li class="active-tab"><i class="fa fa-hospital-o"></i>USES</li>
+   	  	<li><i class="fa fa-book"></i>INTERACTION</li>
+   	  	<li><i class="fa fa-cogs"></i>HOW DOES IT WORK</li>
+   	  	<li><i class="fa fa-exclamation-triangle"></i>PRECAUTIONS</li>
+   	  	<li><i class="fa fa-question-circle"></i>STORAGE</li>
+   	  	<li><i class="fa fa-ambulance"></i>HOW TO GET IT</li>
+   	  </ul>
+
+   	  <div class="col-md-11 individual-detail">
+   	  	<p>Exigentin is primarily indicated in the treatment of allergies that last throughout the year or are seasonal (blocked/runny nose, sneezing, itching).</p>
+   	  </div>
+   </div>
+
+</body>
+</html>

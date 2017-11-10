@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tablet</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+	    /*TABLET IMAGE*/
+         .tablet-img{
+           margin-top: 100px;
+         }
+         .tablet-img > img{
+         	height: 300px;
+         }
+ 
+
+
+	    /*END TABLET IMAGE*/
+		.tablet-name{
+			margin-bottom: 35px;
+
+		}
+		.tablet-price{
+			font-size: 22px;
+			font-weight: bold;
+		}
+		.prescription{
+			padding-bottom: 20px;
+			border-bottom: 1px solid #cce;
+		}
+		.red{
+			color: red;
+			font-size: 14px;
+			border-right: 1px solid red;
+			font-weight: bold;
+			padding-right: 7px;
+		}
+		.availability{
+			color: #023d53;
+			font-size: 14px;
+			font-weight: bold;
+			padding-left: 7px;
+		}
+		.in-stock{
+			color: #035394;
+			font-size: 14px;
+		}
+		.input-quantity{
+			margin-bottom: 15px;
+		}
+		.btn-buy{
+			width: 100%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: #ff8400;
+			font-size: 16px;
+			color: white;
+		}
+		.btn-buy:hover{
+           background-color: green;
+           color: white;
+           transition: 1s;
+		}
+		.ambulance{
+			font-size: 30px;
+			opacity: 0.6;
+		}
+		.mg-bt{
+			margin-top: 30px;
+			padding-bottom: 23px;
+			border-bottom: 1px solid #cce;
+		}
+		.payment-options{
+			padding-top: 10px;
+		}
+		.tablet-details{
+			margin-top: 40px;
+			border-top: 1px solid #cce;
+			position: relative;
+			left: -1.2%;
+			padding-left: 0px !important;
+			margin-left: 0px  !important;
+		}
+		p.normally{
+			font-size: 11px;
+			color: #666;
+			line-height: 13px
+		}
+
+		.tablet-details > li{
+			background-color: white;
+			border-left: 1px solid #cce;
+
+		}
+		.tablet-details > li > a{
+            font-size: 12px;
+            font-weight: 600;
+ 			color : #666;
+ 			text-transform: uppercase;
+ 			font-family: "Open Sans", sans-serif;
+		}
+		.tablet-details > li > a{
+			padding: 15px 25px;
+		}
+			 .tablet-details > li > a:hover{
+			background-color: #035394;
+			color: #fff;
+			opacity: 1;
+		}
+		li.open-tab > a{
+		   background-color: #035394;
+			color: #fff;
+			opacity: 1;	
+		}
+		.tablet-uses{
+			   padding-top: 30px;
+				padding-left: 6%;
+				padding-right: 6%;
+				color: #666;
+				font-size: 14px;
+				font-family: "Open Sans", sans-serif;
+		}
+		.tablet-details-down{
+			border: 1px solid #cce;
+			padding-bottom: 15px;
+			margin-bottom: 10px;
+		}
+
+		.tablet-details > li > a:hover > .fa-uses-font
+		{
+			color: #ff8400;
+			transition: 1s;
+		}
+		.open-tab >a > .fa-uses-font{
+			color: #ff8400;
+		}
+
+
+
+	   /*Horizontal list and its details*/
+	   .horizontal-list-details{
+	   	margin-top: 70px;
+	   }
+	   .tab-details > li{
+            padding: 20px 1%;
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0.8;
+            border: 1px solid #ddd;
+		}
+		.nav-tabs{
+			border: none;
+		}
+		.tab-details > li > i{
+			padding-right: 14px;
+			font-size: 20px;
+		}
+		.tab-details > li:hover{
+			background-color: green;
+            color: white;
+            cursor: pointer;
+		}
+		.tab-details > li:hover >  i{
+           color: yellow;
+           transition: 1s;
+		}
+		.individual-detail{
+			padding: 20px 0%;
+			border: 1px solid #ddd;
+		}
+		.individual-detail > p{
+			padding-left: 3%;
+			font-size: 16px;
+			opacity: 0.8;
+		}
+		.active-tab{
+			background-color: green;
+            color: white;
+		}
+		.active-tab > i{
+			color: yellow;
+		}
+		@media screen  and (max-width: 500px)
+		{
+		  .tab-details > li{
+		  	font-size: 11px;
+		  }
+          .tab-details > li > i{
+			padding-right: 5px;
+			font-size: 15px;
+		   }
+
+		}
+		/*Style End OF Horizontal LIst*/
+	</style>
+</head>
+<body style="background-color: #fff; padding-top: 50px;">
+   <div class="container-fluid">
+   	  <div class="row">
+   	     <div class="col-md-5 tablet-img">
+   	        <img src="img/tablet5.jpg" class="img img-responsive">
+   	     </div><!--  /div.col-md-4 -->
+   	     
+   	     <div class="col-md-6">
+   	        <h3 class="tablet-name">Glucophage 500mg</h3>
+   	        <p class="tablet-price">RS. 15</p>
+   	        <p class="prescription"><span  class="pull-right"><span class="red">Prescription Required</span><span class="availability">Availablitiy:</span> <span class="in-stock">In Stock</span></span></p>
+
+   	        <div class="row">
+
+   	        	<div class=" col-md-6" type="disc">
+   	        		<ul class="text-muted">
+   	        			<li>Generic: Metformin HCl</li>
+   	        			<li>Dose: 500 mg</li>
+   	        			<li>Dosage Form: Tablets</li>
+   	        			<li>Pack Size: 50 Tablets</li>
+   	        			<li>Strip Size: 10 Tablets</li>
+   	        		</ul>
+   	        	</div><!--  /div.col-md-6 -->
+
+   	        	<div class="col-md-offset-3 col-md-3">
+   	        		<p class="quantity">Quantity</p>
+   	        		<input  type="number" value="1" name="quantity" class="form-control input-quantity" />
+   	        		<button class="btn btn-buy">BUY NOW</button>
+   	        	</div>
+
+   	        </div><!--  /div.row -->
+   	        <div class="row mg-bt">
+   	        	<div class="col-md-4">
+   	        		<div class="row">
+   	        			<div class="col-md-offset-1  col-md-2">
+   	        				<i class="fa fa-ambulance ambulance pull-left"></i>
+   	        			</div>
+   	        			<div class="col-md-9">
+   	        			   <p class="small normally">Normally Delivered in
+   	        			   4-12 working hours in Karachi
+   	        			   24-48 working hours in all other cities</p>	
+   	        			</div>
+   	        		</div>
+   	        		 
+   	        	</div>
+   	        </div>
+   	        <div class="row payment-options">
+   	        	<h5>Payment Options</h5>
+   	        	<div style="height: 120px; border: 1px solid black">
+   	        	</div>
+   	        </div><!--  /div.row -->
+   	    </div><!--  /div.col-md-8 -->	
+   	  </div> <!--  /div.row -->
+   </div><!-- /div.container-fluid -->
+   <div class="container horizontal-list-details">
+   	  <ul class="nav nav-tabs tab-details">
+   	  	<li :class="uses.className" @click="change(0)"><i class="fa fa-hospital-o"></i>USES</li>
+   	  	<li :class="interaction.className" @click="change(1)"><i class="fa fa-book"></i>INTERACTION</li>
+   	  	<li :class="precautions.className" @click="change(3)"><i class="fa fa-exclamation-triangle"></i>PRECAUTIONS</li>
+   	  	<li :class="work.className" @click="change(2)"><i class="fa fa-cogs"></i>HOW DOES IT WORK</li>
+   	  	<li :class="howToUse.className" @click="change(4)"><i class="fa fa-question-circle"></i>HOW TO USE</li>
+   	  	<li :class="storage.className" @click="change(5)"><i class="fa fa-question-circle"></i>STORAGE</li>
+   	  	<li :class="getIt.className"  @click="change(6)"><i class="fa fa-ambulance"></i>HOW TO GET IT</li>
+   	  </ul>
+
+   	  <div class="col-md-11 individual-detail">
+   	  	<p><span v-html="dataToShow"></span></p>
+   	  </div>
+   </div>
+
+   <script src="https://unpkg.com/vue@2.4.2/dist/vue.js"> 
+   </script>
+   <script>
+        new Vue({
+        el: '.horizontal-list-details',
+        data: {
+        	uses:{description: 'Exigentin is primarily indicated in the treatment of allergies that last throughout the year or are seasonal (blocked/runny nose, sneezing, itching).', className: 'active-tab'},
+        	interaction:{description: 'No known interactions.', className: ''},
+        	precautions:{description: '<ul><li>Exigentin should be used with caution in patients with kidney disease, thyroid disease, and heart disease.</li><li>Exigentin should be avoided in pregnant mothers.</li><li>Patients using Loratadine may at times experience nausea, headache, drowsiness, tiredness, vomiting, diarrhea, dry mouth, and stomach pain.</li></ul>', className: ''},
+        	work:{description: 'Loratadine has an anti-inflammatory action on the cells. It reduces the uptake of chemical messengers that cause inflammation by the cells and thereby reduces and relieves the patient.', className: ''},
+        	howToUse:{description: 'Swallow the tablet as whole with a glass of water before or after a meal.', className: ''},
+        	storage:{description: 'Store the medication at room temperature.', className: ''},
+        	getIt:{description: 'Exigentin 10mg is available on Dawaai.pk, an online pharmacy in Pakistan that provides the convenience of ordering online medicines with the ease of getting them delivered to your doorstep.', className: ''},
+        	dataToShow: ''
+        },
+        created()
+        {
+          this.dataToShow = this.uses.description;
+          console.log(this.dataToShow);
+
+        },
+        methods:{
+        	change: function(i)
+        	{
+        		this.uses.className = '';
+        		this.interaction.className = '';
+        		this.storage.className = '';
+        		this.work.className = '';
+        		this.precautions.className = '';
+        		this.howToUse.className = '';
+        		if(i == 0)
+        		{
+        			this.dataToShow = this.uses.description;
+        			this.uses.className = 'active-tab';
+        		}
+        		else if(i == 1)
+        		{
+        			this.dataToShow = this.interaction.description;
+        		    this.interaction.className = 'active-tab';
+        		}
+        		else if(i == 2)
+        		{
+        			this.dataToShow = this.work.description;
+        		    this.work.className = 'active-tab';
+        		}
+        		else if(i == 3)
+        		{
+        			this.dataToShow = this.precautions.description;
+        		    this.precautions.className = 'active-tab';
+        		}
+        		else if(i == 4)
+        		{
+        			this.dataToShow = this.howToUse.description;
+        		    this.howToUse.className = 'active-tab';
+        		}
+        		else if(i == 5)
+        		{
+        			this.dataToShow = this.storage.description;
+        		    this.storage.className = 'active-tab';
+        		}
+        		else if(i == 6)
+        		{
+        			this.dataToShow = this.getIt.description;
+        		    this.getIt.className = 'active-tab';
+        		}
+        	}
+        }
+     })
+
+   </script>
+</body>
+</html> 

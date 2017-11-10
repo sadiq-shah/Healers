@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Make An Appointment</title>
+	<meta name="viewport" content="width=device-width intial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+	<script type="text/javascript" src="js/jquery1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/index-style.css">
+
+	<style type="text/css">
+    #root{
+      margin-top: 120px;
+    }
+		.button-group{
+			margin-bottom: 30px;		
+		}
+		.appointment{
+			border: 2px solid #ddd;
+			padding: 25px 20px;
+
+		}
+		.select-date{
+			font-size: 20px;
+			font-weight: normal;
+			margin-bottom: 35px;
+		}
+		label{
+			margin-bottom: 10px;
+			font-style: italic;
+		}
+		div.form-group{
+			margin-bottom: 30px;
+		}
+		button.btn-next{
+		   font-size: 20px;
+		   padding-bottom: 35px;
+		}
+		.small-font{
+			font-size: 13px;
+			font-weight: bolder;
+		}
+    input.form-control, select.form-control, #startDate{
+        border: 2px solid #ddd;
+    }
+
+	</style>
+</head>
+<body>
+   <div class="pd-top">
+     <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Healers</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pharmacy Products<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="white">Page 1-1</a></li>
+                  <li><a href="#" class="white">Page 1-2</a></li>
+                  <li><a href="#" class="white">Page 1-3</a></li>
+                </ul>
+              </li>
+             <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Find Doctor <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Find Physician</a></li>
+                  <li><a href="#">Find Surgeon</a></li>
+                  <li><a href="#">Find Dentist</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" data-target="#signUpModal" data-toggle="modal"><span class="fa fa-user"></span> Sign Up</a></li>
+              <li><a href="#" data-target="#loginModal" data-toggle="modal"><span class="fa fa-sign-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+        <div class="row">
+          <div class="col-md-offset-3 col-md-9">
+            <form>
+               <div class="row input-product">
+                  <input type="text" name="" placeholder="Search For Products" class="col-md-5 col-xs-6 input-product-search" />
+                  
+
+                  <div class="col-md-2 col-xs-2">
+                    <button class="btn  btn-search btn-lg"><i class="fa fa-search"></i></button>
+                  </div><!-- div.col-md-2 -->
+                  
+                  <div class="col-md-offset-3 col-md-2">
+                    <a href="#"> <span class="badge cart-counter">5</span></a><br>
+                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="price">Rs. 175.00</span>
+                  </div><!-- div.col-md-2 -->
+
+               </div><!-- div.row div.input-product -->
+            </form><!--  form -->
+             
+          </div>
+          
+        </div><!-- div.col-md-6 -->
+        
+      </div><!-- div.container -->
+      </nav>
+      
+   </div><!-- div.pd-top -->
+
+
+   <div class="container-fluid" id="root">
+   	 <div class="row">
+   	 	<div class="col-md-offset-4 col-md-4">
+   	 	    <div class="button-group">
+   	 	       <button class="btn btn-success btn-lg">Book Online</button>
+   	 	       <button class="btn btn-primary btn-lg">Book By Call</button>
+   	 	    </div><!-- div.button-group -->
+   	 	    <div class="appointment" v-if="bookAnAppointment && !verfication_code">
+   	 	    	<p class="select-date bold primary-full">Select Date, Hospital &amp; Time</p>
+   	 	    	<form v-on:submit.prevent>
+   	 	    	  <div class="form-group">
+   	 	    	  	<label for="date">Select Date</label>
+   	 	    	  	<input type="text" name="date" class="form-control" id="startDate" value="new Date()">
+   	 	    	  </div><!-- div.form-group -->
+
+   	 	    	  <div class="form-group">
+   	 	    	  	<label for="select_hospital">Select Hospital</label>
+   	 	    	  	<select class="form-control">
+   	 	    	  		<option value="Maroof International Hospital">Maroof International Hospital</option>
+   	 	    	  		<option value="Shifa Medical Complex">Shifa Medical Complex</option>
+
+   	 	    	  	</select>
+   	 	    	  </div><!-- div.form-group -->
+
+   	 	    	  <div class="form-group">
+   	 	    	  	<label for="select_available_time">Select Available Time</label>
+   	 	    	  	<select class="form-control">
+   	 	    	  		<option value="4PM">04:00PM</option>
+   	 	    	  		<option value="5PM">05:00PM</option>
+   	 	    	  		<option value="6PM">06:00PM</option>
+   	 	    	  		<option value="7PM">07:00PM</option>
+   	 	    	  		<option value="8PM">08:00PM</option>
+   	 	    	  	</select>
+   	 	    	  </div><!-- div.form-group -->
+
+   	 	    	  <div class="form-group">
+   	 	    	  	<button type="submit" class="btn btn-danger form-control btn-next" @click="next">
+   	 	    	  		Next
+   	 	    	  	</button>
+   	 	    	  </div><!-- div.form-group -->
+
+   	 	    	</form> <!-- form -->
+   	 	    </div>
+            
+
+            <div class="after-next appointment" v-if="!bookAnAppointment && !verfication_code">
+            	<p class="select-date bold">Enter Contact Details<br>
+            	<span class="small-font text-muted">We need them to connect you with doctor.</span></p>
+            	<form v-on:submit.prevent>
+
+
+            	   <div class="form-group">
+            	   	 <label for="name" class="text-lighter">Your Name</label>
+            	   	 <input type="text" name="name" placeholder="Enter Your Name"  class="form-control" required/>
+            	   </div><!-- div.form-group -->
+
+            	   <div class="form-group">
+            	   	 <label for="name" class="text-lighter">Your Phone #</label>
+            	   	 <input type="text" name="name" placeholder="Enter Number in your use"  class="form-control" required/>
+            	   </div><!-- div.form-group -->
+
+
+            	   <div class="form-group">
+            	   	 <label for="name" class="text-lighter">Login with Phone / Email</label>
+            	   	 <input type="text" name="name" placeholder="Your Email"  class="form-control" required/>
+            	   </div><!-- div.form-group -->
+
+
+            	   <div class="form-group">
+            	   	 <label for="name" class="text-lighter">Your Password</label>
+            	   	 <input type="password" name="name" placeholder="Your Password"  class="form-control" required/>
+            	   </div><!-- div.form-group -->
+                   
+                   <div class="form-group">
+   	 	    	  	<button type="submit" class="btn btn-danger form-control btn-next" @click="proceedToVerification">
+   	 	    	  		Next
+   	 	    	  	</button>
+   	 	    	  </div><!-- div.form-group -->
+
+            	</form>
+            </div><!-- div.appointment -->
+
+            <div class="after-next appointment" v-if="verfication_code">
+               <p class="select-date bold">Enter Verification Code</p>
+               <form v-on:submit.prevent>
+
+                   <div class="form-group">
+                      <input type="text" name="verfication-code" placeholder="Enter Pin Code Sent To Your Phone" class="form-control" required />	
+                   </div><!-- div.form-group -->
+
+               	   <div class="form-group">
+   	 	    	  	<button type="submit" class="btn btn-danger form-control btn-next" @click="verfication" required>
+   	 	    	  		Next
+   	 	    	  	</button>
+   	 	    	  </div><!-- div.form-group -->
+
+               </form>
+            </div>
+
+   	 	</div><!-- div.col-md-6 -->
+   	 </div><!--  div.row -->
+   </div><!-- div.container-fluid -->
+   <br><br><br>
+     <!--footer-->
+   <footer id="footer">
+     
+     <div class="footer-line">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-offset-1 col-md-3  col-xs-6">
+             <h4 style="color: white">Product Categories</h4><br>
+             <ul class="list-unstyled footer-list">
+               <li><a href="#">Health &amp; Fitness</a></li>
+               <li><a href="#">Perfume, Beauty &amp; Hair Care</a></li>
+               <li><a href="#">Baby Care</a></li>
+               <li><a href="#">Medicines &amp; Medical Equipment</a></li>
+               <li><a href="#">Pharmacy</a></li>
+               <li><a href="#">Brands</a></li>
+             </ul>
+           </div>
+
+
+
+           <div class="col-md-offset-1 col-md-3  col-xs-6">
+             <h4 style="color: white">Specialists</h4><br>
+             <ul class="list-unstyled footer-list">
+               <li><a href="#">General Physician</a></li>
+               <li><a href="#">Dentistry</a></li>
+               <li><a href="#">Dermatolgy</a></li>
+               <li><a href="#">Cardiologist</a></li>
+               <li><a href="#">Gynecology</a></li>
+               <li><a href="#">Orthopedic</a></li>
+             </ul>
+           </div>
+
+
+
+           <div class="col-md-offset-1 col-md-3 col-xs-offset-4 col-xs-6">
+              <h4 style="color: white">Contact Us</h4><br>
+              <ul class="list-unstyled footer-list">
+                 <li>Healers.com.pk</li>
+                 <li><i class="fa fa-phone"></i> 0333-1234567</li>
+                 <li><i class="fa fa-envelope"></i> order@healers.com.pk</li>
+                 <li ><button class="btn btn-sm btn-primary btn-facebook"><a href=""><i class="fa fa-facebook"></i></a></button>
+                 <button class="btn btn-sm btn-primary btn-twitter"><a href=""><i class="fa fa-twitter"></i></a></button>
+                 <button class="btn btn-sm btn-primary btn-instagram"><a href=""><i class="fa fa-instagram"></i></a></button></li>
+                
+              </ul>
+           </div><!-- div.col-md-3 -->
+         </div><!-- div.row -->
+       </div><!-- div.container -->
+     </div>
+   </footer>
+   <div class="container-fluid copyright">
+      <p class="text-center">Copyright &copy; all rights reserved 2017</p>
+   </div>
+   <!--/ footer-->
+   <script></script>
+   <script src="js/vue.min.js"></script>
+   <script>
+       new Vue({
+         el: '#root',
+         data:{
+         	  bookAnAppointment: true,
+         	  verfication_code: false
+         },
+         methods:{
+         	next()
+         	{
+         		this.bookAnAppointment = false;
+         	},
+         	verfication()
+         	{
+         		this.verfication_code = true;
+         	},
+         	proceedToVerification()
+         	{
+         		this.verfication_code = true;
+         	}
+         }
+       });
+   </script>
+   <script src="js/moment.js"></script>
+   <script src="js/daterangepicker.js"></script>
+   
+
+   <!-- Finding The Selected Date Of User -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+       
+        $('#startDate').daterangepicker({
+          singleDatePicker: true,
+          startDate: moment().subtract(6, 'days')
+        });
+
+     
+        updateConfig();
+
+        function updateConfig() {
+          var options = {};
+
+          if ($('#singleDatePicker').is(':checked'))
+            options.singleDatePicker = true;
+          
+          if ($('#showDropdowns').is(':checked'))
+            options.showDropdowns = true;
+
+          if ($('#showWeekNumbers').is(':checked'))
+            options.showWeekNumbers = true;
+
+          if ($('#showISOWeekNumbers').is(':checked'))
+            options.showISOWeekNumbers = true;
+
+          if ($('#timePicker').is(':checked'))
+            options.timePicker = true;
+          
+          if ($('#timePicker24Hour').is(':checked'))
+            options.timePicker24Hour = true;
+
+          if ($('#timePickerIncrement').val().length && $('#timePickerIncrement').val() != 1)
+            options.timePickerIncrement = parseInt($('#timePickerIncrement').val(), 10);
+
+          if ($('#timePickerSeconds').is(':checked'))
+            options.timePickerSeconds = true;
+          
+          if ($('#autoApply').is(':checked'))
+            options.autoApply = true;
+
+          if ($('#dateLimit').is(':checked'))
+            options.dateLimit = { days: 7 };
+
+          if ($('#ranges').is(':checked')) {
+            options.ranges = {
+              'Today': [moment(), moment()],
+              'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+              'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+              'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+              'This Month': [moment().startOf('month'), moment().endOf('month')],
+              'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            };
+          }
+
+      
+
+          if ($('#startDate').val().length) 
+            options.startDate = $('#startDate').val();
+           console.log(options.startDate);
+        }
+
+      });
+      
+      
+      </script>
+</body>
+</html>

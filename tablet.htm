@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tablet</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+		.tablet-img-full
+		{
+		}
+		.tablet-name{
+			margin-bottom: 35px;
+
+		}
+		.tablet-price{
+			font-size: 22px;
+			font-weight: bold;
+		}
+		.prescription{
+			padding-bottom: 20px;
+			border-bottom: 1px solid #cce;
+		}
+		.red{
+			color: red;
+			font-size: 14px;
+			border-right: 1px solid red;
+			font-weight: bold;
+			padding-right: 7px;
+		}
+		.availability{
+			color: #023d53;
+			font-size: 14px;
+			font-weight: bold;
+			padding-left: 7px;
+		}
+		.in-stock{
+			color: #035394;
+			font-size: 14px;
+		}
+		.input-quantity{
+			margin-bottom: 15px;
+		}
+		.btn-buy{
+			width: 100%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: #ff8400;
+			font-size: 16px;
+			color: white;
+		}
+		.ambulance{
+			font-size: 30px;
+			opacity: 0.6;
+		}
+		.mg-bt{
+			margin-top: 30px;
+			padding-bottom: 23px;
+			border-bottom: 1px solid #cce;
+		}
+		.payment-options{
+			padding-top: 10px;
+		}
+		.tablet-details{
+			margin-top: 40px;
+			border-top: 1px solid #cce;
+			position: relative;
+			left: -1.2%;
+			padding-left: 0px !important;
+			margin-left: 0px  !important;
+		}
+		p.normally{
+			font-size: 11px;
+			color: #666;
+			line-height: 13px
+		}
+
+		.tablet-details > li{
+			background-color: white;
+			border-left: 1px solid #cce;
+
+		}
+		.tablet-details > li > a{
+            font-size: 12px;
+            font-weight: 600;
+ 			color : #666;
+ 			text-transform: uppercase;
+ 			font-family: "Open Sans", sans-serif;
+		}
+		.tablet-details > li > a{
+			padding: 15px 25px;
+		}
+			 .tablet-details > li > a:hover{
+			background-color: #035394;
+			color: #fff;
+			opacity: 1;
+		}
+		li.open-tab > a{
+		   background-color: #035394;
+			color: #fff;
+			opacity: 1;	
+		}
+		.tablet-uses{
+			   padding-top: 30px;
+				padding-left: 6%;
+				padding-right: 6%;
+				color: #666;
+				font-size: 14px;
+				font-family: "Open Sans", sans-serif;
+		}
+		.tablet-details-down{
+			border: 1px solid #cce;
+			padding-bottom: 15px;
+			margin-bottom: 10px;
+		}
+		.fa-uses-font{
+			font-size: 25px;
+			margin-right: 15px;
+		}
+
+		.tablet-details > li > a:hover > .fa-uses-font
+		{
+			color: #ff8400;
+			transition: 1s;
+		}
+		.open-tab >a > .fa-uses-font{
+			color: #ff8400;
+		}
+	</style>
+</head>
+<body style="background-color: #fff; padding-top: 50px;">
+   <div class="container-fluid">
+   	  <div class="row">
+   	     <div class="col-md-4">
+   	        <img src="img/tabletFull.jpg" class="img img-responsive">
+   	     </div><!--  /div.col-md-4 -->
+   	     
+   	     <div class="col-md-7">
+   	        <h3 class="tablet-name">Glucophage 500mg</h3>
+   	        <p class="tablet-price">RS. 15</p>
+   	        <p class="prescription"><span  class="pull-right"><span class="red">Prescription Required</span><span class="availability">Availablitiy:</span> <span class="in-stock">In Stock</span></span></p>
+
+   	        <div class="row">
+
+   	        	<div class=" col-md-6" type="disc">
+   	        		<ul class="text-muted">
+   	        			<li>Generic: Metformin HCl</li>
+   	        			<li>Dose: 500 mg</li>
+   	        			<li>Dosage Form: Tablets</li>
+   	        			<li>Pack Size: 50 Tablets</li>
+   	        			<li>Strip Size: 10 Tablets</li>
+   	        		</ul>
+   	        	</div><!--  /div.col-md-6 -->
+
+   	        	<div class="col-md-offset-3 col-md-3">
+   	        		<p class="quantity">Quantity</p>
+   	        		<input  type="number" value="1" name="quantity" class="form-control input-quantity" />
+   	        		<button class="btn btn-buy">BUY NOW</button>
+   	        	</div>
+
+   	        </div><!--  /div.row -->
+   	        <div class="row mg-bt">
+   	        	<div class="col-md-4">
+   	        		<div class="row">
+   	        			<div class="col-md-offset-1  col-md-2">
+   	        				<i class="fa fa-ambulance ambulance pull-left"></i>
+   	        			</div>
+   	        			<div class="col-md-9">
+   	        			   <p class="small normally">Normally Delivered in
+   	        			   4-12 working hours in Karachi
+   	        			   24-48 working hours in all other cities</p>	
+   	        			</div>
+   	        		</div>
+   	        		 
+   	        	</div>
+   	        </div>
+   	        <div class="row payment-options">
+   	        	<h5>Payment Options</h5>
+   	        	<div style="height: 120px; border: 1px solid black">
+   	        	</div>
+   	        </div><!--  /div.row -->
+   	    </div><!--  /div.col-md-8 -->	
+   	  </div> <!--  /div.row -->
+   </div><!-- /div.container-fluid -->
+   <div class="container">
+   	   <ul class="nav nav-tabs tablet-details">
+   	     <li class="open-tab"><a href="#"><i class="fa fa-hospital-o fa-uses-font"></i>Uses</a></li>
+   	     <li><a href="#"><i class="fa fa-book fa-uses-font"></i>INTERACTION</a></li>
+   	     <li><a href="#"><i class="fa fa-cogs fa-uses-font"></i>HOW DOES IT WORK</a></li>
+   	     <li><a href="#"><i class="fa fa-exclamation-triangle fa-uses-font"></i>PRECAUTIONS</a></li>
+   	   </ul>
+   	   <ul class="list-inline  tablet-details">
+   	     <li class="list-inline-item">Lorem ipsum</li>
+   	     <li class="list-inline-item">Phasellus iaculis</li>
+   	     <li class="list-inline-item">Nulla volutpat</li>
+   	   </ul>
+   	   <div class="row tablet-details-down">
+   	   	  <p class="tablet-uses">Humulin 70/30 (70% Insulin Isophane/30% Human Insulin) is used to improve blood sugar control in adults and children with Diabetes Mellitus (Type 1 and Type 2) and Diabetic Ketoacidosis</p>
+   	   </div>
+   </div>
+</body>
+</html> 
