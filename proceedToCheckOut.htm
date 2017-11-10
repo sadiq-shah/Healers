@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tablet</title>
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width intial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+	 <script src="js/jquery.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link rel="stylesheet" type="text/css" href="css/index-style.css">
+	 <style type="text/css">
+	   body{
+	   	overflow-x: hidden;
+	   }
+        .pd-top{
+        	margin-bottom: 30px;
+        }
+        .qty{
+        	border: 1px solid navy;
+        }
+     </style>
+</head>
+
+
+<body>
+   <div class="pd-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Healers</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pharmacy Products<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="white">Page 1-1</a></li>
+                  <li><a href="#" class="white">Page 1-2</a></li>
+                  <li><a href="#" class="white">Page 1-3</a></li>
+                </ul>
+              </li>
+             <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Find Doctor <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Find Physician</a></li>
+                  <li><a href="#">Find Surgeon</a></li>
+                  <li><a href="#">Find Dentist</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" data-target="#signUpModal" data-toggle="modal"><span class="fa fa-user"></span> Sign Up</a></li>
+              <li><a href="#" data-target="#loginModal" data-toggle="modal"><span class="fa fa-sign-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+        <div class="row">
+          <div class="col-md-offset-3 col-md-9">
+            <form>
+               <div class="row input-product">
+                  <input type="text" name="" placeholder="Search For Products" class="col-md-5 col-xs-6 input-product-search" />
+                  
+
+                  <div class="col-md-2 col-xs-2">
+                    <button class="btn  btn-search btn-lg"><i class="fa fa-search"></i></button>
+                  </div><!-- div.col-md-2 -->
+                  
+                  <div class="col-md-offset-3 col-md-2">
+                    <a href="#"> <span class="badge cart-counter">5</span></a><br>
+                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="price">Rs. 175.00</span>
+                  </div><!-- div.col-md-2 -->
+
+               </div><!-- div.row div.input-product -->
+            </form><!--  form -->
+             
+          </div>
+          
+        </div><!-- div.col-md-6 -->
+        
+      </div><!-- div.container -->
+      </nav>
+      
+   </div><!-- div.pd-top -->
+
+   <div class="conatiner-fulid">
+   	 <div class="row">
+   	 	<div class="col-md-offset-1 col-md-10">
+   	 	   <h1>Items Description</h1>
+   	 		<div class="table-responsive">
+   	 			<table class="table table-striped">
+   	 				<tr>
+   	 					<th>Item</th>
+   	 					<td>Omron Nebulizer NE C803 </td>
+   	 				</tr>
+   	 				<tr>
+   	 					<th>Unit Price</th>
+   	 					<td>Rs 5,999</td>
+   	 				</tr>
+   	 				<tr>
+   	 					<th>Qty</th>
+   	 					<td><input type="number" name="qty" value="1" class="qty"></td>
+   	 				</tr>
+   	 				<tr>
+   	 					<th>Total Price</th>
+   	 					<td>Rs 5,999</td>
+   	 				</tr>
+   	 				<tr>
+   	 					<th>Discount</th>
+   	 					<td>Rs 0.00</td>
+   	 				</tr>
+   	 				<tr>
+   	 					<th>Grand Total Amount</th>
+   	 					<td>Rs 5,999</td>
+   	 				</tr>
+   	 			</table>
+   	 			<button type="submit" class="btn btn-danger"><i class="fa fa-backward"></i> Continue Shopping</button> 
+   	 			<button type="submit" class="btn btn-primary">Proceed To Checkout</button>
+   	 		</div><!-- div.table-responsive -->
+   	 	</div><!-- div.col-md-10 -->
+   	 </div><!-- div.row -->
+   </div><!-- div.container-fluid -->
+   <br><br><br><br><br><br>	
+
+     <!--footer-->
+   <footer id="footer">
+     
+     <div class="footer-line">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-offset-1 col-md-3  col-xs-6">
+             <h4 style="color: white">Product Categories</h4><br>
+             <ul class="list-unstyled footer-list">
+               <li><a href="#">Health &amp; Fitness</a></li>
+               <li><a href="#">Perfume, Beauty &amp; Hair Care</a></li>
+               <li><a href="#">Baby Care</a></li>
+               <li><a href="#">Medicines &amp; Medical Equipment</a></li>
+               <li><a href="#">Pharmacy</a></li>
+               <li><a href="#">Brands</a></li>
+             </ul>
+           </div>
+
+
+
+           <div class="col-md-offset-1 col-md-3  col-xs-6">
+             <h4 style="color: white">Specialists</h4><br>
+             <ul class="list-unstyled footer-list">
+               <li><a href="#">General Physician</a></li>
+               <li><a href="#">Dentistry</a></li>
+               <li><a href="#">Dermatolgy</a></li>
+               <li><a href="#">Cardiologist</a></li>
+               <li><a href="#">Gynecology</a></li>
+               <li><a href="#">Orthopedic</a></li>
+             </ul>
+           </div>
+
+
+
+           <div class="col-md-offset-1 col-md-3  col-xs-6">
+              <h4 style="color: white">Contact Us</h4><br>
+              <ul class="list-unstyled footer-list">
+                 <li>Healers.com.pk</li>
+                 <li><i class="fa fa-phone"></i> 0333-1234567</li>
+                 <li><i class="fa fa-envelope"></i> order@healers.com.pk</li>
+                 <li ><button class="btn btn-sm btn-primary btn-facebook"><a href=""><i class="fa fa-facebook"></i></a></button>
+                 <button class="btn btn-sm btn-primary btn-twitter"><a href=""><i class="fa fa-twitter"></i></a></button>
+                 <button class="btn btn-sm btn-primary btn-instagram"><a href=""><i class="fa fa-instagram"></i></a></button></li>
+                
+              </ul>
+           </div><!-- div.col-md-3 -->
+         </div><!-- div.row -->
+       </div><!-- div.container -->
+     </div>
+   </footer>
+   <div class="container-fluid copyright">
+      <p class="text-center">Copyright &copy; all rights reserved 2017</p>
+   </div>
+   <!--/ footer-->
+</body>
+
+
+</html>
