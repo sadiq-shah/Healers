@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width intial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index-style.css">
+  <style type="text/css">
+    *{
+      box-sizing: border-box;
+    }
+    span.tablet-name{
+      font-size: 14px;
+      color: black;
+      opacity: 0.8;
+
+    }
+    
+    .tablet-price{
+      /*transform: translateY(-10px);*/
+      color: black;
+    }
+    .tablet-img{
+      padding-bottom: 0px;
+      border-bottom: 2px solid #337ab7;
+      margin-bottom: 5px;
+    }
+    .tablet-full-division{
+      margin-bottom: 50px;
+      border: 1px solid white;
+    }
+    .tablet-full-division:hover{
+      border: 1px solid #ddd;
+    }
+    #top-products > div > h1{
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 3px;
+    }
+    #top-products{
+      margin-bottom: 130px;
+    }
+    @media screen and (max-width: 768px) and (min-width: 420px)
+    {
+      .top-heading{
+        margin-left: 15%;
+      }
+      .tablet-full-division{
+        margin-right: 15%;
+        margin-left: 15%;
+        width: 70%;
+      }
+    }
+  </style>
+</head>
+<body>
+ <div class="pd-top">
+ 	 <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Healers</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pharmacy Products<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="white">Page 1-1</a></li>
+                <li><a href="#" class="white">Page 1-2</a></li>
+                <li><a href="#" class="white">Page 1-3</a></li>
+              </ul>
+            </li>
+           <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Find Doctor <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Find Physician</a></li>
+                <li><a href="#">Find Surgeon</a></li>
+                <li><a href="#">Find Dentist</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-target="#signUpModal" data-toggle="modal"><span class="fa fa-user"></span> Sign Up</a></li>
+            <li><a href="#" data-target="#loginModal" data-toggle="modal"><span class="fa fa-sign-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-9">
+          <form>
+             <div class="row input-product">
+                <input type="text" name="" placeholder="Search For Products" class="col-md-5 col-xs-6 input-product-search" />
+                
+
+                <div class="col-md-2 col-xs-2">
+                  <button class="btn  btn-search btn-lg"><i class="fa fa-search"></i></button>
+                </div><!-- div.col-md-2 -->
+                
+                <div class="col-md-offset-3 col-md-2">
+                  <a href="#"> <span class="badge cart-counter">5</span></a><br>
+                  <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="price">Rs. 175.00</span>
+                </div><!-- div.col-md-2 -->
+
+             </div><!-- div.row div.input-product -->
+          </form><!--  form -->
+           
+        </div>
+        
+      </div><!-- div.col-md-6 -->
+      
+    </div><!-- div.container -->
+    </nav>
+    
+ </div><!-- div.pd-top -->
+
+ <div class="container-fluid jumbotron">
+   <h2 class="text-center bold main-color mg-15">Find Medicinal Products &amp; Order It Online</h2>
+   <form>
+      <div class="row">
+         <div class="col-md-offset-2 col-md-2 col-sm-2">
+           <div class="form-group find-doctor">
+             <select class="form-control">
+                <option value="">Categories</option>
+                <option value="">Cold, Flu &amp; Allergy</option>
+                <option value="">Oral Care</option>
+                <option value="">Bath &amp; Body</option>
+                <option value="">Skin Care Tools</option>
+                <option value="">Dental Service</option>
+                <option value="">Sexual Wellness</option>
+             </select>
+           </div><!-- div.form-group -->
+         </div><!-- div.col-md-2 -->
+         <div class="col-md-4 col-sm-7">
+           <div class="form-group find-doctor">
+              <input type="text" name="" placeholder="Search For Medicines And Health Products" class="form-control" />
+           </div><!-- div.form-group -->
+         </div><!-- div.col-md-5 -->
+
+
+         <div class="col-md-2 col-sm-2">
+           <div class="form-group">
+             <button class="btn btn-danger btn-search btn-lg">Search</button>
+           </div><!-- div.form-group -->
+         </div><!-- div.col-md-2 -->
+      
+
+      </div><!-- div.row -->
+   </form>
+ </div>
+
+
+<!--  Section For Top Products Start -->
+ <section id="top-products">
+   <div class="container">
+     <h1><span class="top-heading">Top Products</span></h1>
+     <div class="row">
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+      <p class="text-center"><a href="#" class="btn btn-primary btn-wider">See More</a></p>
+     </div><!-- div.row -->
+   </div><!-- div.container -->
+ </section>
+<!--   Section For Top Products End -->
+
+ <!--  Section For Most Sold Products Start -->
+ <section id="top-products" class="most-sold-products"> 
+   <div class="container">
+     <h1><span class="top-heading">Most Sold Products</span></h1>
+     <div class="row">
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+      <p class="text-center"><a href="#" class="btn btn-primary btn-wider">See More</a></p>
+     </div><!-- div.row -->
+   </div><!-- div.container -->
+ </section>
+<!--   Section For Top Products End -->
+
+
+
+
+ <!--  Section For Recently Sold Products Start -->
+ <section id="top-products" class="recently-sold-products">
+   <div class="container">
+     <h1><span class="top-heading">Recently Sold Products</span></h1>
+     <div class="row">
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+
+
+      <a href="#">
+       <div class="col-md-3 col-sm-6 col-xs-12 tablet-full-division">
+         <div class="tablet-img">
+           <img src="img/tablet1.jpg" class="img img-responsive" />
+            <span class="tablet-name">Caltrate 600+D3</span>
+         </div>
+         <div class="tablet-description">
+          
+           <p class="tablet-price">Rs 1,675 <button class="btn btn-danger btn-xs pull-right">Add To Cart</button></p>
+         </div>
+       </div><!-- div.col-md-3 -->
+      </a> 
+      <p class="text-center"><a href="#" class="btn btn-primary btn-wider">See More</a></p>
+     </div><!-- div.row -->
+   </div><!-- div.container -->
+ </section>
+<!--   Section For Recently Sold Products End -->
+  <div class="container">
+    <div class="row">
+       <h3>BENEFITS OF BUYING ONLINE MEDICINES IN PAKISTAN</h3>
+       <p><b>Online pharmacy</b> in Pakistan helps consumers save time, money and the greatest benefit for many individuals is buying medicines online is simplicity and convenience. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <br><br>
+    </div><!-- div.row -->
+  </div><!-- div.contaniner -->
+  
+
+
+
+    <!--footer-->
+  <footer id="footer">
+    
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-3  col-xs-6">
+            <h4 style="color: white">Product Categories</h4><br>
+            <ul class="list-unstyled footer-list">
+              <li><a href="#">Health &amp; Fitness</a></li>
+              <li><a href="#">Perfume, Beauty &amp; Hair Care</a></li>
+              <li><a href="#">Baby Care</a></li>
+              <li><a href="#">Medicines &amp; Medical Equipment</a></li>
+              <li><a href="#">Pharmacy</a></li>
+              <li><a href="#">Brands</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="col-md-offset-1 col-md-3  col-xs-6">
+            <h4 style="color: white">Specialists</h4><br>
+            <ul class="list-unstyled footer-list">
+              <li><a href="#">General Physician</a></li>
+              <li><a href="#">Dentistry</a></li>
+              <li><a href="#">Dermatolgy</a></li>
+              <li><a href="#">Cardiologist</a></li>
+              <li><a href="#">Gynecology</a></li>
+              <li><a href="#">Orthopedic</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="col-md-offset-1 col-md-3 col-xs-offset-4 col-xs-6">
+             <h4 style="color: white">Contact Us</h4><br>
+             <ul class="list-unstyled footer-list">
+                <li>Healers.com.pk</li>
+                <li><i class="fa fa-phone"></i> 0333-1234567</li>
+                <li><i class="fa fa-envelope"></i> order@healers.com.pk</li>
+                <li ><button class="btn btn-sm btn-primary btn-facebook"><a href=""><i class="fa fa-facebook"></i></a></button>
+                <button class="btn btn-sm btn-primary btn-twitter"><a href=""><i class="fa fa-twitter"></i></a></button>
+                <button class="btn btn-sm btn-primary btn-instagram"><a href=""><i class="fa fa-instagram"></i></a></button></li>
+               
+             </ul>
+          </div><!-- div.col-md-3 -->
+        </div><!-- div.row -->
+      </div><!-- div.container -->
+    </div>
+  </footer>
+  <div class="container-fluid copyright">
+     <p class="text-center">Copyright &copy; all rights reserved 2017</p>
+  </div>
+  <!--/ footer-->
+
+
+
+
+
+  <!-- Sign Up Modal -->
+  <!-- Modal -->
+    <div class="modal fade" id="signUpModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header bg-main">
+            <button type="button" class="close" data-dismiss="modal"><span class="white">&times;</span></button>
+            <h4 class="modal-title text-center white">Create An Account</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="container">
+                 <div class="row">
+                   <div class="col-md-6">
+                     <div class="row">
+                        <div class="col-md-7">
+                           <div class="form-group">
+                             <label class="control-label col-sm-4">Name:</label>
+                             <div class="col-sm-8">
+                                 <input type="text" class="form-control" id="fname" placeholder="Enter Your First Name" required="">
+                               </div> 
+                           </div><!-- div.form-group -->      
+                        </div><!-- div.col-md-6 -->
+                        <div class="col-md-5">
+                           <div class="form-group">
+                               <div class="col-sm-11">
+                                 <input type="text" class="form-control" id="lname" placeholder="Enter Your Last Name">
+                               </div>
+                             </div>     
+                        </div>
+                     </div><!-- div.row -->
+                     <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Email:</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                            </div>
+                          </div>     
+                     </div>
+
+                     <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Password:</label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+                            </div>
+                          </div>     
+                     </div>
+
+                     <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Confirm Password:</label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Your Password">
+                            </div>
+                          </div>     
+                     </div>
+
+                     <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Phone</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="phone-number" placeholder="Enter Your Phone Number" >
+                            </div>
+                          </div>     
+                     </div>
+
+                       
+                   </div><!-- div.col-md-6 -->
+                 </div><!-- div.row -->
+              </div><!-- div.container -->
+            
+          </div>
+          <div class="modal-footer modal-footer-signup">
+            <div class="col-md-offset-1 col-md-10">
+               <button type="submit" class="btn    btn-default btn-signUp form-control" data-dismiss="modal">SignUp</button>
+            </div>
+            
+          </div>
+        </div>
+        </form>
+        
+      </div>
+    </div>
+    <!-- Sign Up Modal End -->
+
+
+
+
+    <!-- Login Modal -->
+    <!-- Modal -->
+      <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header bg-main">
+              <button type="button" class="close" data-dismiss="modal"><span class="white">&times;</span></button>
+              <h4 class="modal-title text-center white">Log In To Your Account</h4>
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal">
+                <div class="container">
+                   <div class="row">
+                     <div class="col-md-3">
+                       
+                       <div class="col-md-12">
+                          <div class="form-group">
+                              
+                              <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                              </div>
+                            </div>     
+                       </div>
+
+                       <div class="col-md-12">
+                          <div class="form-group">
+                              
+                              <div class="col-sm-12">
+                                <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+                              </div>
+                            </div>     
+                       </div>
+
+                         
+                     </div><!-- div.col-md-6 -->
+                   </div><!-- div.row -->
+                </div><!-- div.container -->
+              
+            </div>
+            <div class="modal-footer ">
+              <div class="col-md-offset-1 col-md-10">
+                 <button type="submit" class="btn    btn-default btn-signUp form-control" data-dismiss="modal">login</button>
+              </div>
+              
+            </div>
+          </div>
+          </form>
+          
+        </div>
+      </div>
+      <!-- Login Modal End -->
+
+</body>
+</html>

@@ -165,6 +165,8 @@
        margin-bottom: 25px;
        overflow: hidden;
        box-sizing: border-box;
+       padding-top: 25px;
+       padding-bottom: 15px;
      }
      .individual-top-doctor > div > div > p > i{
       color: #337ab7;
@@ -179,6 +181,9 @@
         margin-top: 10px;
         color: black;
         font-size: 14px;
+     }
+     .individual-top-doctor > p{
+        padding: 5px 10px;
      }
      .top-heading{
          line-height: 35px;
