@@ -14,11 +14,25 @@
     .secondary{
         color: #EA6045;
     }
+    .btn-secondary{
+        background-color: #EA6045;
+        color: white;
+    }
+    .btn-secondary:hover{
+        color: white;
+    }
     input, select{
         border: 2px solid #ddd;
     }
     .green{
         color: green;
+    }
+    .navbar-right{
+        margin-right: 15px !important;
+    }
+    .btn-wider{
+        padding-right: 40px;
+        padding-left: 40px;
     }
 /*
     Theme Name: Medilab

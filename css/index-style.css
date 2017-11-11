@@ -153,7 +153,67 @@
       .white{
         color: white;
       }
-      
+
+     /* Top Doctors*/
+     .mg-6{
+      padding-right: 6px;
+      padding-left: 6px;
+     }
+     .individual-top-doctor{
+       /*margin-right: 4px;*/
+       margin-top: 25px;
+       margin-bottom: 25px;
+       overflow: hidden;
+       box-sizing: border-box;
+     }
+     .individual-top-doctor > div > div > p > i{
+      color: #337ab7;
+      margin-right: 5px;
+     }
+     .individual-top-doctor > div > div > p
+     {
+      color: black;
+      font-size: 14px;
+     }
+     .doctor-decription{
+        margin-top: 10px;
+        color: black;
+        font-size: 14px;
+     }
+     .top-heading{
+         line-height: 35px;
+         border-bottom: 3px solid #EA6045;
+     }
+     .top-doctor-name{
+         text-decoration: underline;
+     }
+     .individual-top-doctor > div > div > img, .btn-secondary {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.individual-top-doctor:hover > div > div > img, .individual-top-doctor:focus > div > div > img, .individual-top-doctor:active > div > div > img {
+   -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+}
+   .btn-wider{
+        margin-right: 5px;
+        font-size: 14px;
+   }
+   /*Top Doctors End*/
+    #testimonial{
+      margin-top: 30px;
+    }
+
+
 		@media screen and (max-width: 1000px)
 		{
 			.mob-center{

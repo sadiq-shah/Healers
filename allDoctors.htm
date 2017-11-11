@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/index-style.css">
 	<style type="text/css">
+        body{
+            overflow-x: hidden;
+        }
         .primary-full-color{
             color: #337ab7;
         }
@@ -74,6 +77,19 @@
             background-color: #EA6045;
             color: white;
         }
+
+        
+        
+        @media screen and (min-width: 1000px)
+        {
+           .best-general{
+               transform: translateX(15px);
+           }
+           .row{
+               margin-right: 0px !important;
+               margin-left: 0px !important;
+           }
+        }
 		@media screen and (max-width: 768px)
 		{
 			.patient-review > div > i{
@@ -88,12 +104,17 @@
 		      .patient-review > div > p{
 		      	width: 90%;
 		      }
+
+
 		}
 		@media screen and (max-width: 350px)
 		{
 			.patient-review > div > i{
                  font-size: 40px;
 			}
+            h1{
+                font-size: 30px;
+            }
 		}
 	</style>
 </head>
@@ -163,28 +184,35 @@
        </div><!-- div.container -->
        </nav>
        
-    </div><!-- div.bg-color -->
+    </div><!-- div.pd-top -->
+
     <p class="make-a-line"></p>
-    <div class="container all-doctors">
-    	<h3>Best General Physician In Lahore</h3>
+        <div class="container all-doctors">
+          <div class="row best-general">
+             <div class="col-md-12">
+                <h1>Best General Physician In Lahore</h1>
 
-    	<ul class="breadcrumb">
-    	  <li><a href="#">Home</a></li>
-    	  <li><a href="#">Find A Physican</a></li>
-    	  <li><a href="#">General Physicain</a></li>
-    	  <li>Italy</li>
-    	</ul>
+                <ul class="breadcrumb">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Find A Physican</a></li>
+                  <li><a href="#">General Physicain</a></li>
+                  <li>Italy</li>
+                </ul><br>
 
-    	<p class="general-physician-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. odo
-    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    	<hr>
+                <p class="general-physician-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. odo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <hr>    
+             </div><!-- div.col-md-12 -->
+                  
+          </div><!-- div.row -->
+    	
     	<div class="row">
     		<div class="col-md-9 ">
     		  <div class="row individualDoctor">
@@ -200,7 +228,7 @@
 
     			        <a href="#" class="doctor-name primary-full-color">Dr. Fatima Hamdani - General Physician</a>
     			        <div class="row">
-    	                    <div class="col-md-2 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p><span class="fa fa-circle fa-circle-green"></span> Available</p>
     	                    </div><!-- div.col-md-2 -->
     	                    <div class="col-md-3 col-xs-6">
@@ -209,7 +237,7 @@
     	                    <div class="col-md-3 col-xs-6">
     	                    	<p>Assistant Professor</p>
     	                    </div><!-- div.col-md-4 -->
-    	                    <div class="col-md-4 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p class="bold">6 Years Experience</p>
     	                    </div><!-- div.col-md-4 --><br>
     	                      	
@@ -243,7 +271,7 @@
     			     <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-9">
     			        <a href="#" class="doctor-name">Dr. Fatima Hamdani - General Physician</a>
     			        <div class="row">
-    	                    <div class="col-md-2 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p><span class="fa fa-circle fa-circle-green"></span> Available</p>
     	                    </div><!-- div.col-md-2 -->
     	                    <div class="col-md-3 col-xs-6">
@@ -252,7 +280,7 @@
     	                    <div class="col-md-3 col-xs-6">
     	                    	<p>Assistant Professor</p>
     	                    </div><!-- div.col-md-4 -->
-    	                    <div class="col-md-4 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p class="bold">6 Years Experience</p>
     	                    </div><!-- div.col-md-4 --><br>
     	                      	
@@ -286,7 +314,7 @@
     			     <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-9">
     			        <a href="#" class="doctor-name">Dr. Fatima Hamdani - General Physician</a>
     			        <div class="row">
-    	                    <div class="col-md-2 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p><span class="fa fa-circle fa-circle-green"></span> Available</p>
     	                    </div><!-- div.col-md-2 -->
     	                    <div class="col-md-3 col-xs-6">
@@ -295,7 +323,7 @@
     	                    <div class="col-md-3 col-xs-6">
     	                    	<p>Assistant Professor</p>
     	                    </div><!-- div.col-md-4 -->
-    	                    <div class="col-md-4 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p class="bold">6 Years Experience</p>
     	                    </div><!-- div.col-md-4 --><br>
     	                      	
@@ -329,7 +357,7 @@
     			     <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-9">
     			        <a href="#" class="doctor-name">Dr. Fatima Hamdani - General Physician</a>
     			        <div class="row">
-    	                    <div class="col-md-2 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p><span class="fa fa-circle fa-circle-green"></span> Available</p>
     	                    </div><!-- div.col-md-2 -->
     	                    <div class="col-md-3 col-xs-6">
@@ -338,7 +366,7 @@
     	                    <div class="col-md-3 col-xs-6">
     	                    	<p>Assistant Professor</p>
     	                    </div><!-- div.col-md-4 -->
-    	                    <div class="col-md-4 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p class="bold">6 Years Experience</p>
     	                    </div><!-- div.col-md-4 --><br>
     	                      	
@@ -371,7 +399,7 @@
     			     <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-9">
     			        <a href="#" class="doctor-name">Dr. Fatima Hamdani - General Physician</a>
     			        <div class="row">
-    	                    <div class="col-md-2 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p><span class="fa fa-circle fa-circle-green"></span> Available</p>
     	                    </div><!-- div.col-md-2 -->
     	                    <div class="col-md-3 col-xs-6">
@@ -380,7 +408,7 @@
     	                    <div class="col-md-3 col-xs-6">
     	                    	<p>Assistant Professor</p>
     	                    </div><!-- div.col-md-4 -->
-    	                    <div class="col-md-4 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p class="bold">6 Years Experience</p>
     	                    </div><!-- div.col-md-4 --><br>
     	                      	
@@ -413,7 +441,7 @@
     			     <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-9">
     			        <a href="#" class="doctor-name">Dr. Fatima Hamdani - General Physician</a>
     			        <div class="row">
-    	                    <div class="col-md-2 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p><span class="fa fa-circle fa-circle-green"></span> Available</p>
     	                    </div><!-- div.col-md-2 -->
     	                    <div class="col-md-3 col-xs-6">
@@ -422,7 +450,7 @@
     	                    <div class="col-md-3 col-xs-6">
     	                    	<p>Assistant Professor</p>
     	                    </div><!-- div.col-md-4 -->
-    	                    <div class="col-md-4 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p class="bold">6 Years Experience</p>
     	                    </div><!-- div.col-md-4 --><br>
     	                      	
@@ -455,7 +483,7 @@
     			     <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-9">
     			        <a href="#" class="doctor-name">Dr. Fatima Hamdani - General Physician</a>
     			        <div class="row">
-    	                    <div class="col-md-2 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p><span class="fa fa-circle fa-circle-green"></span> Available</p>
     	                    </div><!-- div.col-md-2 -->
     	                    <div class="col-md-3 col-xs-6">
@@ -464,7 +492,7 @@
     	                    <div class="col-md-3 col-xs-6">
     	                    	<p>Assistant Professor</p>
     	                    </div><!-- div.col-md-4 -->
-    	                    <div class="col-md-4 col-xs-6">
+    	                    <div class="col-md-3 col-xs-6">
     	                    	<p class="bold">6 Years Experience</p>
     	                    </div><!-- div.col-md-4 --><br>
     	                      	
