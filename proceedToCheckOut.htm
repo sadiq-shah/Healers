@@ -21,6 +21,25 @@
         .qty{
         	border: 1px solid navy;
         }
+        .fa-shopping-cart{
+          color: white;
+        }
+        .price{
+          color: white;
+        }
+        @media screen and (min-width: 500px) and (max-width: 950px)
+        {
+          .price{
+            position: relative;
+            left: -10%;
+          }
+        }
+        @media screen and (min-width: 320px) and (max-width: 768px)
+        {
+          .price{
+            transform: translate(-10px,-15px);
+          }
+        }
      </style>
 </head>
 
@@ -69,16 +88,16 @@
           <div class="col-md-offset-3 col-md-9">
             <form>
                <div class="row input-product">
-                  <input type="text" name="" placeholder="Search For Products" class="col-md-5 col-xs-6 input-product-search" />
+                  <input type="text" name="" placeholder="Search For Medicines And Health Products" class="col-md-5 col-xs-6 input-product-search" />
                   
 
                   <div class="col-md-2 col-xs-2">
                     <button class="btn  btn-search btn-lg"><i class="fa fa-search"></i></button>
                   </div><!-- div.col-md-2 -->
                   
-                  <div class="col-md-offset-3 col-md-2">
+                  <div class="col-md-offset-3 col-md-2 ">
                     <a href="#"> <span class="badge cart-counter">5</span></a><br>
-                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="price">Rs. 175.00</span>
+                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="price pull-right">Your Cart: <br>Rs. 175.00</span>
                   </div><!-- div.col-md-2 -->
 
                </div><!-- div.row div.input-product -->
